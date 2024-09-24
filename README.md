@@ -88,20 +88,6 @@ This will launch the JavaFX application that allows users to view and interact w
     └── ...                    # Client files
 ```
 
-## Running Tests
-
-To run tests for the Spring Boot backend, use:
-
-```bash
-./gradlew test
-```
-
-For any additional tests in the JavaFX project, use:
-
-```bash
-./gradlew test
-```
-
 ## Troubleshooting
 
 - Ensure Docker and Docker Compose are properly installed on your system.
