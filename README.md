@@ -16,9 +16,9 @@ This repository contains two main projects:
 
 The MySQL database is required for the Spring Boot backend. You can start it by running the following command:
 
-\`\`\`bash
+```bash
 docker-compose up -d
-\`\`\`
+```
 
 This will start the MySQL service in a Docker container. The \`docker-compose.yml\` file is already configured to set up the necessary MySQL database.
 
@@ -28,17 +28,16 @@ After starting the database, navigate to the \`news-parser-server\` directory an
 
 Using Gradle Wrapper:
 
-\`\`\`bash
+```bash
 cd news-parser-server
 ./gradlew bootRun
-\`\`\`
+```
 
 If you have Gradle installed globally:
 
-\`\`\`bash
+```bash
 gradle bootRun
-\`\`\`
-
+```
 This will start the backend API server that scrapes news data and interacts with the MySQL database.
 
 ### Step 3: Run the JavaFX Project (new-parser-interface)
@@ -49,16 +48,15 @@ Navigate to the \`new-parser-interface\` directory:
 
 Using Gradle Wrapper:
 
-\`\`\`bash
+```bash
 cd ../new-parser-interface
 ./gradlew run
-\`\`\`
-
+```
 If you have Gradle installed globally:
 
-\`\`\`bash
+```bash
 gradle run
-\`\`\`
+```
 
 This will launch the JavaFX application that allows users to view and interact with the news articles.
 
@@ -79,7 +77,7 @@ This will launch the JavaFX application that allows users to view and interact w
 
 ### Directory Structure
 
-\`\`\`bash
+```bash
 .
 ├── .gitignore
 ├── docker-compose.yml
@@ -88,21 +86,21 @@ This will launch the JavaFX application that allows users to view and interact w
 │   └── ...                    # Server files
 └── new-parser-interface/      # JavaFX application (frontend)
     └── ...                    # Client files
-\`\`\`
+```
 
 ## Running Tests
 
 To run tests for the Spring Boot backend, use:
 
-\`\`\`bash
+```bash
 ./gradlew test
-\`\`\`
+```
 
 For any additional tests in the JavaFX project, use:
 
-\`\`\`bash
+```bash
 ./gradlew test
-\`\`\`
+```
 
 ## Troubleshooting
 
